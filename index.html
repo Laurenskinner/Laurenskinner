@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lauren Skinner | Portfolio</title>
+
+<style>
+:root{
+    /* Cozy Neutral Retreat Palette */
+    --bg:#F6F2EC;
+    --card:#FFFFFF;
+    --primary:#7D6E63;
+    --text:#3F3A36;
+    --muted:#6F675F;
+    --border:#E4DDD4;
+    --shadow:0 10px 30px rgba(80,65,55,.08);
+    --radius:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    width:min(1100px,92%);
+    margin:auto;
+}
+
+header{
+    padding:70px 0 40px;
+}
+
+.profile{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.photo{
+    width:260px;
+    height:260px;
+    border-radius:24px;
+    background:linear-gradient(135deg,#EFE6DB,#DDD1C4);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:5px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:var(--muted);
+    text-align:center;
+    font-weight:600;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profile h1{
+    font-size:3rem;
+    margin-bottom:8px;
+}
+
+.profile h2{
+    color:var(--primary);
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.profile p{
+    color:var(--muted);
+    max-width:720px;
+}
+
+.section{
+    margin:50px 0;
+}
+
+.card{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:35px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+}
+
+.section-title{
+    color:var(--primary);
+    font-size:1.6rem;
+    margin-bottom:18px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    background:var(--bg);
+    border:1px solid var(--border);
+    padding:10px 16px;
+    border-radius:999px;
+    font-size:.95rem;
+}
+
+.activities ul{
+    padding-left:20px;
+}
+
+.activities li{
+    margin-bottom:12px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--primary);
+    text-decoration:none;
+    font-weight:600;
+}
+
+footer{
+    text-align:center;
+    padding:40px 0;
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+@media(max-width:800px){
+
+.profile{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.photo{
+    margin:auto;
+}
+
+.profile h1{
+    font-size:2.4rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container profile">
+
+<div class="photo">
+<img src="photo.jpg" alt="Lauren Skinner"
+onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=&quot;padding:20px;&quot;>Profile Photo<br><br>Add photo.jpg to display an image.</div>';">
+</div>
+
+<div>
+<h1>Lauren Skinner</h1>
+
+<h2>Aspiring Student Leader</h2>
+
+<p>
+Rising Junior at Stanford Online High School with a passion for finance/economics. Interested in combining data-driven thinking, problem solving, and leadership to create a meaningful impact.
+</p>
+
+</div>
+
+</div>
+</header>
+
+
+<div class="container">
+
+<section class="section">
+<div class="card">
+
+<h3 class="section-title">About Me</h3>
+
+<p>
+I have a strong academic interest in finance, investing, and the ways quantitative analysis and design intersect through data modeling. As I continue my education, I hope to deepen my understanding of economics in future college studies and explore how financial systems shape businesses, communities, and global markets.
+</p>
+
+<br>
+
+<p>
+Most importantly, I am driven by curiosity and a passion for learning. I approach every experience with a willingness to improve, seeking opportunities that challenge me to grow as both a student and a leader.
+</p>
+
+</div>
+</section>
+
+
+<section class="section">
+
+<div class="grid">
+
+<div class="card">
+
+<h3 class="section-title">Skills</h3>
+
+<div class="skill-list">
+
+<div class="skill">Microsoft Word</div>
+<div class="skill">Microsoft PowerPoint</div>
+<div class="skill">Microsoft Excel</div>
+<div class="skill">Productivity Platforms</div>
+<div class="skill">Data Organization</div>
+<div class="skill">Presentation Design</div>
+<div class="skill">Communication</div>
+<div class="skill">Research</div>
+<div class="skill">Analytical Thinking</div>
+<div class="skill">Leadership</div>
+<div class="skill">Collaboration</div>
+
+</div>
+
+</div>
+
+
+<div class="card activities">
+
+<h3 class="section-title">Background & Activities</h3>
+
+<ul>
+<li>10+ years of competitive piano experience</li>
+<li>4 years of involvement on the yearbook committee</li>
+<li>2 years participating in investment club competitions</li>
+<li>Several years volunteering at local libraries and senior centers</li>
+<li>Academic focus on finance, investing, economics, and data modeling</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="card contact">
+
+<h3 class="section-title">Contact</h3>
+
+<p>
+For academic opportunities, collaborations, or professional connections:
+</p>
+
+<br>
+
+<p>
+<a href="mailto:LSkinner5454@gmail.com">
+LSkinner5454@gmail.com
+</a>
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+
+<footer>
+© 2026 Lauren Skinner • Portfolio Website
+</footer>
+
+</body>
+</html>
